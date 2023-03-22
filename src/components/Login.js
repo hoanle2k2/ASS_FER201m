@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { useNavigate,useParams } from "react-router-dom";
+import user from '../user.json'
 import { UserContent } from "../App";
 import "./style.css";
 const Login = () => {
@@ -11,18 +12,14 @@ const Login = () => {
 
 	
 	useEffect(() => {
-		fetch("https://jsonplaceholder.typicode.com/users")
-			.then((res) => res.json())
-			.then((res) => {
-				setAccount(res);
-			});
+				setAccount(user);
+			;
 	}, []);
 	const { setUser } = useContext(UserContent);
 	console.log(out);
 	if(typeof out === 'string'){
-		setUser.email="";
-		setUser.username="";
-		
+		setUser([]);
+		navigate("/");
 	}
 	
 	const handleLogin = () => {
@@ -42,7 +39,7 @@ const Login = () => {
 	};
 	return (
 		<div className="login">
-			<div className="login_form">
+			<div className="login_form " style={{fontSize:'2rem'}}>
 				<div className="login_title">Login System</div>
 				<div className="login_input">
 					<label>Username:</label>
@@ -50,7 +47,7 @@ const Login = () => {
 				</div>
 				<div className="login_input">
 					<label>email:</label>
-					<input ref={emailRef} type="text" />
+					<input ref={emailRef} type="password" />
 				</div>
 				<div className="login_button">
 					<button onClick={handleLogin}>Login</button>

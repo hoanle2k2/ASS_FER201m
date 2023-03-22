@@ -1,28 +1,45 @@
-import React, { useEffect, useState,useContext } from "react";
+import React, { useEffect, useRef, useState, useContext } from "react";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
-import { UserContent } from "../App";
+
 import Row from 'react-bootstrap/Row';
 import movie from "../movie.json";
 import cate from "../category.json";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./style.css";
+import { UserContent } from '../App.js'
+import comments from '../comment.json'
+import user1 from '../user.json'
 const Detail = () => {
 	const [movies, setMovies] = useState({});
 	const { slug, id } = useParams();
 	const [cates, setCates] = useState({});
 	const { user } = useContext(UserContent);
-	useEffect(() => {
+	const navigate = useNavigate();
 
+	useEffect(() => {
 		const abs = movie.find(
 			(item) => item.id.toString() === id.toString()
 		);
 		setMovies(abs);
 		;
 	}, [slug, id]);
+	const commentlist = comments.filter(e => e.movieId.toString() === id.toString())
+
+	const commentEdit = useRef();
+	const handleComment = () => {
+		const com = commentEdit.current.value;
+		fetch('../comment.json')
+			.then(responseString => responseString.json())
+			.then(data => {
+				myEditablenameField.value = data.name
+				
+			})
+		
+			navigate(`/detail/${slug}/${id}`);
+	}
 
 	useEffect(() => {
-
 		const abs = cate?.find(
 			(item) => item.id.toString() === slug.toString()
 		);
@@ -60,15 +77,20 @@ const Detail = () => {
 							</div>
 							<div className="detail_text">
 								Bình luận:
-								<textarea name="paragraph_text" cols="100" rows="10"></textarea>
+								<textarea name="paragraph_text" ref={commentEdit} cols="100" rows="10" value={comments.find(c => c.userId === user.id && c.movieId.toString() === id)?.comment}></textarea>
 							</div>
-							<button className="btn btn-primary " style={{ width: '200px' }}>Đánh giá</button></div>
+							<button className="btn btn-primary " onClick={handleComment} style={{ width: '200px' }}>Đánh giá</button></div>
 						: <></>
-				}
+					}
 
-
-
-					<div className="comment mt-5">Bình luận:</div>
+					<div className="comment mt-5" style={{ fontWeight: '700' }}>Bình luận:</div>
+					{
+						commentlist.map(e => (
+							<div style={{ fontSize: '2rem' }}>
+								<div><span style={{ fontWeight: '700' }}>{user1.find(e1 => e1.id === e.userId).name}</span>: {e.comment}</div>
+							</div>
+						))
+					}
 				</div>
 			</Row>
 		</Container>

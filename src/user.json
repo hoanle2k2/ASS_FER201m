@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "name": "admin1",
+      "username": "admin1",
+      "email": "admin1",
+      "gender": 0
+    },
+    {
+      "id": 2,
+      "name": "admin2",
+      "username": "admin2",
+      "email": "admin2",
+      "address": 0
+    },
+    {
+      "id": 3,
+      "name": "admin3",
+      "username": "admin3",
+      "email": "admin3",
+      "address": 1
+    },
+    {
+      "id": 4,
+      "name": "admin4",
+      "username": "admin4",
+      "email": "admin4",
+      "gender": 1
+    },
+    {
+      "id": 5,
+      "name": "admin5",
+      "username": "admin5",
+      "email": "admin5",
+      "gender": 1
+    }
+]

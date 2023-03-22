@@ -1,13 +1,53 @@
 [
     {
-      "categoryId": 1,
-      "categoryName":"Hành Động",
-      "id": 1,
-      "title": "Vua hải tặc",
-      "year":2022,
-      "score":7,
-      "url": "https://via.placeholder.com/600/92c952",
-      "thumbnailUrl": "https://static.mservice.io/blogscontents/momo-upload-api-221010113704-638009986247161745.jpg"
+      "commentId": 1,
+      "userId":1,
+      "movieId": 1,
+      "comment": "admin1Movie1",
+      "score":9
+    },
+    {
+      "commentId": 2,
+      "userId":1,
+      "movieId": 2,
+      "comment": "admin1Movie2",
+      "score":5
+    },
+    {
+      "commentId": 3,
+      "userId":2,
+      "movieId": 3,
+      "comment": "admin2",
+      "score":9
+    },
+    {
+      "commentId": 4,
+      "userId":3,
+      "movieId": 3,
+      "comment": "admin3",
+      "score":9
+    },
+    {
+      "commentId": 5,
+      "userId":3,
+      "movieId": 4,
+      "comment": "admin3",
+      "score":9
+    },
+    {
+      "commentId": 6,
+      "userId":5,
+      "movieId": 4,
+      "comment": "admin5",
+      "score":7
+    },
+    {
+      "commentId": 6,
+      "userId":4,
+      "movieId": 4,
+      "comment": "admin4",
+      "score":9
     }
+    
     
 ]
