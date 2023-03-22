@@ -1,0 +1,66 @@
+[
+    {
+      "categoryId": 1,
+      "id": 1,
+      "title": "Vua hải tặc",
+      "year":2022,
+      "score":7,
+      "description": "abc",
+      "thumbnailUrl": "https://static.mservice.io/blogscontents/momo-upload-api-221010113704-638009986247161745.jpg"
+    },
+    {
+      "categoryId": 2,
+      "id": 2,
+      "title": "Hello World",
+      "year":2019,
+      "score":10,
+      "description":"Một cậu bé có tên là Naomi Katagaki, hiện tại cậu mới đang là một học sinh cao trung. Bỗng nhiên, vào một ngày đẹp trời, một người lạ xuất hiện trước mặt cậu và cũng tự xưng mình là Naomi của 10 năm sau (Naomi đến từ tương lai). Khi đó Naomi của hiện tại và Naomi của tương lai, họ đã cùng nhau hợp tác với nhau để có thể thay đổi tương, và cùng nhau hỗ trợ cứu cô bạn cùng học Ruri, cô nàng này cũng chính là người mà sẽ hẹn hò với Naomi vào 3 tháng sau của Naomi hiện tại. Liệu câu chuyện giả tưởng lãng mạn này sẽ như thế nào?",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2023/02/di-nguoc-thoi-gian-de-tim-em-118341-thumbnail.jpg"
+    },
+    {
+      "categoryId": 3,
+      "id": 3,
+      "title": "World War Z",
+      "year":2013,
+      "score":7,
+      "description":"Bộ phim bom tấn này được dựa trên cuốn World War Z: An Oral History of the Zombie War nhưng gần như chỉ mượn cái tên và ý tưởng thảm họa zombie, bởi trong khi cuốn sách là ghi chép của nhiều nhân chứng sống ở khắp nơi thì bộ phim lại chỉ khai thác nhân vật Gerry Lane. Anh là niềm hi vọng gần như duy nhất của Liên Hợp Quốc giữa một chuỗi những sự kiện kinh hoàng, khi mà dân số thế giới đã thuyên giảm hàng tỷ người…",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2021/09/the-chien-z-52445-thumbnail.jpg"
+    },
+    {
+      "categoryId": 4,
+      "id": 4,
+      "title": "DORAEMON: NOBITA VÀ CHUYẾN THÁM HIỂM MẶT TRĂNG",
+      "year":2019,
+      "score":7,
+      "description":"Doraemon the Movie 39 (Nobita Và Chuyến Thám Hiểm Mặt Trăng) Nobita ở trường tuyên bố với mọi người rằng có con thỏ trên Mặt Trăng. Cậu đã bị mọi người chê cười và Doraemon lấy ra huy hiệu Thành viên Câu lạc bộ dị thuyết tạo ra vương quốc Thỏ trên Mặt Trăng. Một ngày nọ có một cậu bé chuyển trường đến lớp Nobita học. Nhóm Nobita đã cùng với cậu bé đã có chuyến phiêu lưu đến vương quốc Thỏ. Trong đêm có một cô gái kì lạ nhìn lên Mặt Trăng...",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2023/03/doraemon-nobita-va-chuyen-tham-hiem-mat-trang-118993-thumbnail.jpg"
+    },
+    {
+      "categoryId": 5,
+      "id": 5,
+      "title": "Avatar: The Way Of Water",
+      "year":2022,
+      "score":7,
+      "description":"Câu chuyện của “Avatar: Dòng Chảy Của Nước” lấy bối cảnh 10 năm sau những sự kiện xảy ra ở phần đầu tiên. Phim kể câu chuyện về gia đình mới của Jake Sully cùng những rắc rối theo sau và bi kịch họ phải chịu đựng khi phe loài người xâm lược hành tinh Pandora.",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2023/03/avatar-dong-chay-cua-nuoc-119215-thumbnail.jpg"
+    },
+    {
+      "categoryId": 5,
+      "id": 6,
+      "title": "Avatar: The Way Of Water",
+      "year":2022,
+      "score":7,
+      "description":"Câu chuyện của “Avatar: Dòng Chảy Của Nước” lấy bối cảnh 10 năm sau những sự kiện xảy ra ở phần đầu tiên. Phim kể câu chuyện về gia đình mới của Jake Sully cùng những rắc rối theo sau và bi kịch họ phải chịu đựng khi phe loài người xâm lược hành tinh Pandora.",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2023/03/avatar-dong-chay-cua-nuoc-119215-thumbnail.jpg"
+    },
+    {
+      "categoryId": 5,
+      "id": 7,
+      "title": "Avatar: The Way Of Water",
+      "year":2022,
+      "score":7,
+      "description":"Câu chuyện của “Avatar: Dòng Chảy Của Nước” lấy bối cảnh 10 năm sau những sự kiện xảy ra ở phần đầu tiên. Phim kể câu chuyện về gia đình mới của Jake Sully cùng những rắc rối theo sau và bi kịch họ phải chịu đựng khi phe loài người xâm lược hành tinh Pandora.",
+      "thumbnailUrl": "https://images2-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&refresh=604800&url=https://hiphimmoi.net/wp-content/uploads/2023/03/avatar-dong-chay-cua-nuoc-119215-thumbnail.jpg"
+    }
+    
+]
