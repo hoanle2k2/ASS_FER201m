@@ -10,12 +10,14 @@ import "./style.css";
 import { UserContent } from '../App.js'
 import comments from '../comment.json'
 import user1 from '../user.json'
+
 const Detail = () => {
 	const [movies, setMovies] = useState({});
 	const { slug, id } = useParams();
 	const [cates, setCates] = useState({});
 	const { user } = useContext(UserContent);
 	const navigate = useNavigate();
+
 
 	useEffect(() => {
 		const abs = movie.find(
@@ -27,16 +29,10 @@ const Detail = () => {
 	const commentlist = comments.filter(e => e.movieId.toString() === id.toString())
 
 	const commentEdit = useRef();
+
 	const handleComment = () => {
-		const com = commentEdit.current.value;
-		fetch('../comment.json')
-			.then(responseString => responseString.json())
-			.then(data => {
-				myEditablenameField.value = data.name
-				
-			})
 		
-			navigate(`/detail/${slug}/${id}`);
+		navigate(`/detail/${slug}/${id}`);
 	}
 
 	useEffect(() => {
@@ -46,6 +42,24 @@ const Detail = () => {
 		setCates(abs);
 		;
 	}, [slug, id]);
+
+	const countScore=()=>{
+		let score=0;
+		let count=0;
+		comments.map(e=>{
+			if(e.movieId==id){
+				score+=e.score;
+				count++;
+			}
+		})
+		if(count==0){
+			return 0;
+		}
+		return score/count.toFixed(2);
+
+	}
+
+	var score=countScore();
 	return (
 		<Container>
 			<Row>
@@ -60,7 +74,7 @@ const Detail = () => {
 						Thể loại: <span>{cate.find(e => e.id === movies.categoryId)?.title}</span>
 					</div>
 					<div className="detail_text">
-						Điểm đánh giá: <span>{movies.score}</span>
+						Điểm đánh giá: <span>{score}</span>
 					</div>
 					<div className="detail_text">
 						Mô tả: <span>{movies.description}</span>
